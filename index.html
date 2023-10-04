@@ -15,9 +15,10 @@
                 <input type="text" id="input-box" placeholder="Add Your Text">
                 <button onclick="addTask()">Add</button>
             </div>
-            <ul id="list-container">
+            <ul id="list-container"ondragover="allowDrop(event)" ondrop="drop(event)">
+             
                 <!-- <li class="checked">Task 1</li>
-                <li>Task 2</li> -->
+                <li draggable="true">Task 2</li> -->
             </ul>
         </div>
     </div>

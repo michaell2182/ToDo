@@ -58,10 +58,11 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 18px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    border-bottom: 1px solid #ccc;
 }
 ul li::before{
     content: '';
@@ -96,4 +97,22 @@ ul li span{
 }
 ul li span:hover{
 background: #edeef0;
+}
+ul li.dragged {
+    opacity: 0.5;
+}
+.edit-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 14px;
+}
+
+
+.edit-button:hover {
+    background-color: #45a049;
 }
